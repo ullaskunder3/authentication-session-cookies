@@ -19,6 +19,9 @@ const store = new mongodbSession({
     collection: 'currentSession'
 })
 
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname+'/src'))
+app.use(express.urlencoded({extended: true}));
 app.use(session({
     secret: 'secret key',
     resave: false,
@@ -26,11 +29,19 @@ app.use(session({
     store: store,
 }))
 
-app.get('/', (req,res)=>{
-    req.session.isAuth = true;
-    console.log(req.session);
-    console.log(req.session.id);
-    res.send("Welcome to the session")
+app.get('/landing', (req,res)=>{
+    res.render('landing');
+})
+app.get('/login', (req,res)=>{
+    res.render('login');
+})
+app.post('/login', (req,res)=>{})
+app.get('/register', (req,res)=>{
+    res.render('register');
+})
+app.post('/register', (req,res)=>{})
+app.get('/profile', (req,res)=>{
+    res.render('profile')
 })
 
 app.listen(PORT, ()=>{
