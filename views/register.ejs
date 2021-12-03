@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <h2 class="heading">Sign up</h2>
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <input type="text" class="form-input" 
+                placeholder="username" 
+                aria-label="username">
+            </div>
+            <div class="input-group">
+                <input type="email" class="form-input" 
+                placeholder="email" 
+                aria-label="email">
+            </div>
+            <div class="input-group">
+                <input type="password" class="form-input" 
+                placeholder="password" 
+                aria-label="password">
+            </div>
+            <button>Sign Up</button>
+        </form>
+        <p class="form-ask">
+            Have an account? <a href="/login">Login</a>
+        </p>
+    </div>
+</body>
+</html>
