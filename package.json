@@ -10,7 +10,9 @@
   "author": "Ullas Kunder",
   "license": "ISC",
   "dependencies": {
+    "connect-mongodb-session": "^3.1.1",
     "express": "^4.17.1",
-    "express-session": "^1.17.2"
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.14"
   }
 }
