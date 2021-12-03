@@ -12,16 +12,18 @@
         <h2 class="heading">Login Page</h2>
         <form action="/login" method="POST">
             <div class="input-group">
-                <input type="text" class="form-input" 
-                placeholder="username" 
-                aria-label="username">
+                <input type="email" class="form-input" 
+                placeholder="email" 
+                aria-label="email"
+                name="email">
             </div>
             <div class="input-group">
                 <input type="password" class="form-input" 
                 placeholder="password" 
-                aria-label="password">
+                aria-label="password"
+                name="password">
             </div>
-            <button>Login</button>
+            <button class="form__btn">Login</button>
         </form>
         <p class="form-ask">
             Don't have an account? <a href="/register">Register</a>

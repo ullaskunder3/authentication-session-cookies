@@ -10,23 +10,26 @@
 <body>
     <div class="form">
         <h2 class="heading">Sign up</h2>
-        <form action="/login" method="POST">
+        <form action="/register" method="POST">
             <div class="input-group">
                 <input type="text" class="form-input" 
                 placeholder="username" 
-                aria-label="username">
+                aria-label="username"
+                name="username">
             </div>
             <div class="input-group">
                 <input type="email" class="form-input" 
                 placeholder="email" 
-                aria-label="email">
+                aria-label="email"
+                name="email">
             </div>
             <div class="input-group">
                 <input type="password" class="form-input" 
                 placeholder="password" 
-                aria-label="password">
+                aria-label="password"
+                name="password">
             </div>
-            <button>Sign Up</button>
+            <button class="form__btn">Sign Up</button>
         </form>
         <p class="form-ask">
             Have an account? <a href="/login">Login</a>
